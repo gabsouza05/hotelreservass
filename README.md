@@ -122,7 +122,7 @@ Relacionamento:
 ## 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/hotelreservas.git
+git clone https://github.com/gabsouza05/hotelreservas.git
 ```
 
 ---
