@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Reservas - Reservas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <h2>🏨 Hotel Reservas</h2>
+
+        <a href="index.html">Quartos</a>
+        <a href="novo-quarto.html">Novo Quarto</a>
+        <a href="reservas.html">Reservas</a>
+
+    </nav>
+
+    <div class="caixa-maior">
+
+        <div class="cabecalho">
+
+            <div>
+
+                <h2>Reservas do Quarto</h2>
+                <p>Visualize e gerencie as reservas.</p>
+
+            </div>
+
+            <button onclick="window.location.href='nova-reserva.html'">
+                + Nova Reserva
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Código</th>
+                    <th>Hóspede</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Ações</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="lista-reservas">
+
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <button class="voltar" onclick="window.location.href='index.html'">
+            Voltar
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        carregarReservas();
+    </script>
+
+</body>
+
+</html>

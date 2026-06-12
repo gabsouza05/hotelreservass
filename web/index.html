@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Reservas - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <h2>🏨 Hotel Reservas</h2>
+
+        <a href="index.html">Quartos</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="sobre.html">Sobre</a>
+
+    </nav>
+
+    <div class="caixa-maior">
+
+        <div class="cabecalho">
+
+            <div>
+                <h2>Quartos Cadastrados</h2>
+                <p>Gerencie os quartos do hotel.</p>
+            </div>
+
+            <button onclick="window.location.href='novo-quarto.html'">
+                + Novo Quarto
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Nº Quarto</th>
+                    <th>Tipo</th>
+                    <th>Ações</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="lista-quartos">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- Modal de Exclusão -->
+
+    <div class="modal" id="modalExcluirQuarto">
+
+        <div class="caixa-modal">
+
+            <div class="icone">
+                ⚠
+            </div>
+
+            <h3>Excluir Quarto</h3>
+
+            <p>Deseja realmente excluir este quarto?</p>
+
+            <div class="botoes-modal">
+
+                <button class="btn-cancelar" onclick="fecharModalQuarto()">
+                    Cancelar
+                </button>
+
+                <button class="btn-excluir" onclick="confirmarExclusaoQuarto()">
+                    Excluir
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        carregarQuartos();
+    </script>
+
+</body>
+
+</html>
